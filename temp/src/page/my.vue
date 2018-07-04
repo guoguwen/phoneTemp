@@ -1,15 +1,11 @@
 <template>
-    <div class="home">
-        <router-view/>
-        <bottom-nav></bottom-nav>
-    </div>
+   <section class="my">
+       我的
+   </section>
 </template>
 <script>
-import bottomNav from '../components/bottomNav.vue'
-
 export default {
-    name:'home',
-    components:{bottomNav},
+    name:'my',
     data (){
         return {
             

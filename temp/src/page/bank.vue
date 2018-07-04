@@ -1,27 +1,27 @@
 <template>
-    <div class="home">
-        <router-view/>
-        <bottom-nav></bottom-nav>
-    </div>
+   <section class="bank">
+       题库
+   </section>
 </template>
 <script>
-import bottomNav from '../components/bottomNav.vue'
-
+import '../assets/js/xback.js'
 export default {
-    name:'home',
-    components:{bottomNav},
+    name:'bank',
     data (){
         return {
             
         }
     },
     methods:{
-
+        
     },
     mounted(){
-
+        XBack.listen(function(){
+            alert('back');
+        });
     },
 }
+      
 </script>
 <style lang="stylus" scoped>
     
